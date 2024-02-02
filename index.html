@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--
+        tailwind
+    -->
+    <header class="bg-amber-700">
+        <section class="max-w-screen-md mx-auto flex flex-col md:flex-row gap-6 justify-between items-center py-3">
+            <div>
+                <img src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-1.svg" class="h-12 text-amber-200">
+            </div>
+            <nav class="flex flex-col md:flex-row gap-8 text-amber-200 uppercase text-sm">
+                <a href="#" class="hover:text-white">link1</a>
+                <a href="#" class="hover:text-white">link2</a>
+                <a href="#" class="hover:text-white">link3</a>
+                <a href="#" class="hover:text-white">link4</a>
+            </nav>
+        </section>
+    </header>
+    <!-- End of the Header -->
+    <!-- Start main -->
+    <main class="bg-amber-50">
+        <section class="max-w-screen-md mx-auto min-h-full flex flex-col-reverse md:flex-row-reverse justify-between">
+            <article class="h-96 flex flex-row flex-1 items-center p-8">
+                <div>
+                    <h1 class="font-bold text-3xl text-amber-900">Here's our h1 tag!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt velit laboriosam beatae aliquid cumque itaque, repellat nemo incidunt natus repellendus porro magni maxime dolor officia labore possimus? Perspiciatis, voluptatibus magni.</p>        
+                </div>
+            </article>
+            <article class="flex-1 bg-cover bg-center" style="background-image: url(img/chris-lehr-GxVvunRZxmM-unsplash.jpg);">
+                <div class="text-center text-4xl p-8 w-full h-96 bg-amber-700 bg-opacity-60 text-white">
+                    Here's out text
+                </div>
+                <!-- <img src="img/chris-lehr-GxVvunRZxmM-unsplash.jpg" 
+                class="h-96 rounded-full"/> -->
+            </article>
+        </section>
+    </main>
+     <!-- End main -->
+    <main class="grid grid-cols-1 md:grid-cols-3 p-8 gap-8">
+        <div class="h-64 bg-amber-600 rounded-3xl"></div>
+        <div class="h-64 bg-amber-600 rounded-3xl"></div>
+        <div class="h-64 bg-amber-600 rounded-3xl"></div>
+    </main>
+</body>
+</html>
