@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script.js">
+            useHead({
+                title: "Here's my title"
+            })
+        </script>
+        <style>
+            .btn {
+                padding: 10px;
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button class='btn' onClick ="balert('Hi!')">Say Hi!</button>
+            <button class='btn' onClick ="balert('Goodbye!')">Say Goodbye!</button>
+        </div>
+        <hr>
+        <button class='btn' onclick="addsTen(100)">Add 10</button>
+        <button class='btn' onclick="changeColor('text-blue-500')">Change blue</button>
+        <button class='btn' onclick="changeColor('text-red-500')">Change red</button>
+        <div id="result" class="text-5xl text-red-500"></div>
+        <hr>
+        <button class='btn' onclick="enterName()">Enter your name</button>
+        <div class="text-6xl">
+            Welcome to my page <span id="firstName"></span>
+        </div>
+    </body>
+</html>
