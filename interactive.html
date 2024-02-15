@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // Change the text of the <div> when it is clicked.
+            const changeText = function(){
+                let divElement = document.getElementById("interactiveDiv");
+                let firstNameSpan = document.getElementById("firstName");
+                let newText;
+                if(divElement.innerHTML == 'Hello!<span id="firstName">' + firstNameSpan.innerHTML + '</span>'){
+                    newText = "Goodbye!"
+                }else{
+                    newText = "Hello!"
+                }
+                divElement.innerHTML = newText + '<span id="firstName">' + firstNameSpan.innerHTML + '</span>';
+            }
+
+            // Log a message to the console when the page loads. 
+            console.log("Starting console!")
+        </script>
+         <style>
+            #interactiveDiv {
+                font-size: 100px;
+                font-family: monospace;
+                color: rgb(46, 36, 185);
+            }
+            #firstName{
+                font-size: 100px;
+                font-family: serif;
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="interactiveDiv" onclick="changeText()">Hello!<span id='firstName'></span></div>
+        <hr>
+        <div>&lt;Click the sentence above to change the content!!&gt;</div>
+        <script>
+            // Prompt the user for input and display it within the <div>.
+                const enterName = function(){
+                let name = prompt('Please Enter Your First Name');
+                let firstNameSpan = document.getElementById("firstName");
+                firstNameSpan.innerHTML = name;
+            }
+            enterName()
+        </script>
+    </body>
+</html>
